@@ -1,29 +1,29 @@
 # Проект по автоматизации E2E сценария расчета кредита
 ## Содержание:
 
-- [Использованный стек технологий](#использованный-стек-технологий)
+- [Использованный стек технологий](#используемый-стек)
 - [Запуск тестов из терминала](#запуск-тестов-из-терминала)
 - [Jenkins](#jenkins)
-- [Allure-отчет](#allure-отчет)
-- [Уведомления в Telegram](#уведомления-в-telegram)
+- [Allure-отчет](#Allure-Report)
+- [Уведомления в Telegram](#Telegram)
 - [Видео запуска тестов](#видео-запуска-тестов)
 
-## Использованный стек технологий
+## Использованный стек
 
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="src/media/logo/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="src/media/logo/Java.svg">
-<img width="6%" title="Gradle" src="src/media/logo/Gradle.svg">
-<img width="6%" title="JUnit5" src="src/media/logo/JUnit5.svg">
-<img width="6%" title="Selenide" src="src/media/logo/Selenide.svg">
-<img width="6%" title="Selenoid" src="src/media/logo/Selenoid.svg">
-<img width="6%" title="Allure Report" src="src/media/logo/Allure_Report.svg">
-<img width="5%" title="Allure TestOps" src="src/media/logo/AllureTestOps.svg">
+<img width="10%" title="IntelliJ IDEA" src="src/media/logo/Intelij_IDEA.svg">
+<img width="10%" title="Java" src="src/media/logo/Java.svg">
+<img width="10%" title="Gradle" src="src/media/logo/Gradle.svg">
+<img width="10%" title="JUnit5" src="src/media/logo/JUnit5.svg">
+<img width="10%" title="Selenide" src="src/media/logo/Selenide.svg">
+<img width="10%" title="Selenoid" src="src/media/logo/Selenoid.svg">
+<img width="10%" title="Allure Report" src="src/media/logo/Allure_Report.svg">
+<img width="10%" title="Allure TestOps" src="src/media/logo/AllureTestOps.svg">
 
-<img width="6%" title="GitHub" src="src/media/logo/GitHub.svg">
-<img width="6%" title="Jenkins" src="src/media/logo/Jenkins.svg">
-<img width="6%" title="Telegram" src="src/media/logo/Telegram.svg">
-<img width="5%" title="Jira" src="src/media/logo/Jira.svg">
+<img width="10%" title="GitHub" src="src/media/logo/GitHub.svg">
+<img width="10%" title="Jenkins" src="src/media/logo/Jenkins.svg">
+<img width="10%" title="Telegram" src="src/media/logo/Telegram.svg">
+<img width="10%" title="Jira" src="src/media/logo/Jira.svg">
 </p>
 
 - Для автотестов использовался язык <code>Java</code>.
@@ -64,7 +64,7 @@ clean bank_test
 * <code>size</code> – размер окна браузера, в котором будут выполняться тесты.
 * <code>remote</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 
-## <img src="src/media/logo/Jenkins.svg" title="Jenkins" width="10%"/> Jenkins
+## <img src="src/media/logo/Jenkins.svg" title="jenkins" width="10%"/> Jenkins
 <p align="center">
 <img title="Jenkins Build" src="src/media/screenshots/screen-Jenkins.png">
 </p>
@@ -97,7 +97,7 @@ clean bank_test
 <img title="Jira Task" src="src/media/screenshots/Jira.png">
 </p>
 
-## <img width="10%" style="vertical-align:middle" title="Telegram" src="src/media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+## <img width="10%" style="vertical-align:middle" title="Telegram" src="src/media/logo/Telegram.svg"> Уведомления в Telegram
 
 После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
 
@@ -105,7 +105,7 @@ clean bank_test
 <img width="70%" title="Telegram Notifications" src="src/media/screenshots/telegram.png">
 </p>
 
-## Видео примера запуска тестов в Selenoid
+## <img width="10%" style="vertical-align:middle" title="видео запуска тестов" src="src/media/logo/Telegram.svg"> Видео запускатестов
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
