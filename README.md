@@ -13,19 +13,19 @@
 ## Использованный стек
 
 <p align="center">
-<img width="10%" title="IntelliJ IDEA" src="src/media/logo/Intelij_IDEA.svg">
-<img width="10%" title="Java" src="src/media/logo/Java.svg">
-<img width="10%" title="Gradle" src="src/media/logo/Gradle.svg">
-<img width="10%" title="JUnit5" src="src/media/logo/JUnit5.svg">
-<img width="10%" title="Selenide" src="src/media/logo/Selenide.svg">
-<img width="10%" title="Selenoid" src="src/media/logo/Selenoid.svg">
-<img width="10%" title="Allure Report" src="src/media/logo/Allure_Report.svg">
-<img width="10%" title="Allure TestOps" src="src/media/logo/AllureTestOps.svg">
+<img width="10%" title="IntelliJ IDEA" src="media/logo/Intelij_IDEA.svg">
+<img width="10%" title="Java" src="media/logo/Java.svg">
+<img width="10%" title="Gradle" src="media/logo/Gradle.svg">
+<img width="10%" title="JUnit5" src="media/logo/JUnit5.svg">
+<img width="10%" title="Selenide" src="media/logo/Selenide.svg">
+<img width="10%" title="Selenoid" src="media/logo/Selenoid.svg">
+<img width="10%" title="Allure Report" src="media/logo/Allure_Report.svg">
+<img width="10%" title="Allure TestOps" src="media/logo/AllureTestOps.svg">
 
-<img width="10%" title="GitHub" src="src/media/logo/GitHub.svg">
-<img width="10%" title="Jenkins" src="src/media/logo/Jenkins.svg">
-<img width="10%" title="Telegram" src="src/media/logo/Telegram.svg">
-<img width="10%" title="Jira" src="src/media/logo/Jira.svg">
+<img width="10%" title="GitHub" src="media/logo/GitHub.svg">
+<img width="10%" title="Jenkins" src="media/logo/Jenkins.svg">
+<img width="10%" title="Telegram" src="media/logo/Telegram.svg">
+<img width="10%" title="Jira" src="media/logo/Jira.svg">
 </p>
 
 - Для автотестов использовался язык <code>Java</code>.
@@ -67,36 +67,37 @@ clean bank_test
 * <code>remote</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 
 ## Jenkins
+Настроен запуск тестов в <code>Jenkins</code>. От находится [тут](https://jenkins.autotests.cloud/job/AN_qa_22_cv_task/). 
 <p align="center">
-<img title="Jenkins Build" src="src/media/screenshots/screen-Jenkins.png">
+<img title="Jenkins Build" src="media/screenshots/screen-Jenkins.png">
 </p>
 
 ## Allure-отчет
-
-<img title="Test Results in Alure" src="src/media/screenshots/Allure-Report.png">
+После выполнения тестов генирируется Allure-отчет. Найти его можено От находится [тут](https://jenkins.autotests.cloud/job/AN_qa_22_cv_task/12/allure/)
+<img title="Test Results in Alure" src="media/screenshots/Allure-Report.png">
 </p>
 
 ## Allure TestOps
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
-На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов.
+На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов. Ссылочка [тут](https://allure.autotests.cloud/launch/32948).
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="src/media/screenshots/Allure-TestOps.png">
+<img title="Allure TestOps DashBoard" src="media/screenshots/Allure-TestOps.png">
 </p>
 
 ## Jira
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>. В Тестовом сценарии в <code>Allure TestOps</code> отображается номер тикета в <code>Jira</code>
 
-<img title="TestOps -> Jira" src="src/media/screenshots/Allure TestOps-Jira.png">
+<img title="TestOps -> Jira" src="media/screenshots/Allure TestOps-Jira.png">
 </p>
 
 А в <code>Jira</code> задаче отображается информация, какие тест-кейсы были написаны в рамках задачи.
-
+Задача [тут](https://jira.autotests.cloud/browse/HOMEWORK-983)
 <p align="center">
-<img title="Jira Task" src="src/media/screenshots/Jira.png">
+<img title="Jira Task" src="media/screenshots/Jira.png">
 </p>
 
 ## Уведомления в Telegram
@@ -104,12 +105,12 @@ clean bank_test
 После завершения сборки, бот созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с результатом.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="src/media/screenshots/telegram.png">
+<img width="70%" title="Telegram Notifications" src="media/screenshots/telegram.png">
 </p>
 
 ## Видео запуска тестов
 
 К каждому тесту в отчете прилагается видео прогона.
 <p align="center">
-  <img title="Selenoid Video" src="src/media/screenshots/video2.gif">
+  <img title="Selenoid Video" src="media/screenshots/video2.gif">
 </p>

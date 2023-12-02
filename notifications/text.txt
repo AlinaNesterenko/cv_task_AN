@@ -1,5 +1,0 @@
-java -jar "-DconfigFile=notifications/telegram.json" notifications/allure-notifications-4.5.0.jar
-
-"-Dremote=https://user1:1234@selenoid.autotests.cloud/wd/hub" "-Dbrowser=Chrome" "-Dversion=${version}" "-Dsize=1024x800"
-
-curl -X POST  -H 'Content-Type: application/json'  -d '{"chat_id": "-4027002410", "text": "Test result", "disable_notification": true}'  https://api.telegram.org/bot6842810318:AAGpwcyyGwkmuRsScQG3lh3KcCFcu8a-Nws/sendMessage

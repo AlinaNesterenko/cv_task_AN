@@ -1,6 +1,5 @@
 package pages;
 
-import org.w3c.dom.html.HTMLInputElement;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -11,21 +10,20 @@ import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.open;
 
 public class CalcPage {
-  //create objects
   SelenideElement titleText = $(".sm-calculate__title"),
 
-      creditType = $("[id='MB_CREDIT_TYPE']"),
+  creditType = $("[id='MB_CREDIT_TYPE']"),
 
-      loanType = $(".sm-calculate__radio-wrapper"),
+  loanType = $(".sm-calculate__radio-wrapper"),
       loanRangeSum = $("[id='LOAN_RANGE_OUTPUT']"),
       loanRangeIncome = $("[id='LOAN_SAL_RANGE_OUTPUT']"),
       creditTerm = $("[id='CREDIT_TERM']"),
 
-      loanSum = $(".sm-calculate__value-result"),
+  loanSum = $(".sm-calculate__value-result"),
 
-      loanPayment = $(".sm-calculate__value-result"),
+  loanPayment = $(".sm-calculate__value-result"),
 
-      submitButton = $(".sm-calculate__button");
+  submitButton = $(".sm-calculate__button");
 
 
   //Open page
