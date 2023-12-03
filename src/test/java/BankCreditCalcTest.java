@@ -6,7 +6,7 @@ import pages.CalcPage;
 
 import static io.qameta.allure.Allure.step;
 
-public class BankCreditCalc extends TestBase {
+public class BankCreditCalcTest extends TestBase {
 
 
   CalcPage calcPage = new CalcPage();

@@ -6,7 +6,7 @@ import pages.CalcPage;
 
 import static io.qameta.allure.Allure.step;
 
-public class BankCreditCalcParamCredit extends TestBase {
+public class BankCreditCalcParamCreditTest extends TestBase {
 
 
   CalcPage calcPage = new CalcPage();
@@ -31,7 +31,7 @@ public class BankCreditCalcParamCredit extends TestBase {
       calcPage.setLoanType(typeCalc);
     });
     step("Устанавливаем ежемесячный доход или сумму", () -> {
-          calcPage.setSum(testData.income);
+      calcPage.setSum(testData.income);
     });
     step("Устанавливаем срок кредита", () -> {
       calcPage.setTerm(testData.term);
@@ -41,12 +41,12 @@ public class BankCreditCalcParamCredit extends TestBase {
       calcPage.waitPage();
     });
     step("Проверяем сумму кредита", () -> {
-              calcPage.verifyLoanSum(crSum);
+      calcPage.verifyLoanSum(crSum);
 
     });
 
     step("Проверяем платеж по кредиту", () -> {
-              calcPage.verifyLoanPayment(crPayment);
+      calcPage.verifyLoanPayment(crPayment);
     });
 
     step("Закрываем страницу", () -> {
