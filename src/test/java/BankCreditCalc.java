@@ -19,6 +19,7 @@ public class BankCreditCalc extends TestBase {
 
     step("Открывыем страницу калькулятора", () -> {
       calcPage.openPage();
+      calcPage.waitPage();
     });
     step("Проверяем что заголовок Расчитай... ", () -> {
       calcPage.verifyTitle(testData.titleText);
@@ -42,6 +43,7 @@ public class BankCreditCalc extends TestBase {
     });
     step("Нажимаем кнопку Расчитать", () -> {
       calcPage.submitAction();
+      calcPage.waitPage();
     });
     step("Проверяем сумму кредита", () -> {
       switch (testData.userLoanType) {

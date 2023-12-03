@@ -40,8 +40,12 @@ public class CalcPage {
     return this;
   }
 
+  public CalcPage waitPage() {
+    waitPage();
+    return this;
+  }
 
-  // create methods for test
+
   public CalcPage setCreditType(String value) {
     creditType.click();
     creditType.$(byText(value)).click();
@@ -49,7 +53,6 @@ public class CalcPage {
   }
 
   public CalcPage setLoanType(String value) {
-    //  loanType.click();
     loanType.$(withText(value)).click();
     return this;
   }
