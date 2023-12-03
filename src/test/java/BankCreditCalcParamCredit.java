@@ -47,5 +47,9 @@ public class BankCreditCalcParamCredit extends TestBase {
               calcPage.verifyLoanPayment(crPayment);
     });
 
+    step("Закрываем страницу", () -> {
+      calcPage.closePage();
+    });
+
   }
 }

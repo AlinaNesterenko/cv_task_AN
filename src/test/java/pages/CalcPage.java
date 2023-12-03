@@ -35,6 +35,11 @@ public class CalcPage {
     return this;
   }
 
+  public CalcPage closePage() {
+    closePage();
+    return this;
+  }
+
 
   // create methods for test
   public CalcPage setCreditType(String value) {

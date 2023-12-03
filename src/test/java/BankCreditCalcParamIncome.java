@@ -46,6 +46,9 @@ public class BankCreditCalcParamIncome extends TestBase {
     step("Проверяем платеж по кредиту", () -> {
               calcPage.verifyLoanPayment(crPayment);
     });
+    step("Закрываем страницу", () -> {
+      calcPage.closePage();
+    });
 
   }
 }
