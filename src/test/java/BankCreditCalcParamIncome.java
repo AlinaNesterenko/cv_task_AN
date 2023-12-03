@@ -1,6 +1,4 @@
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
@@ -8,13 +6,13 @@ import pages.CalcPage;
 
 import static io.qameta.allure.Allure.step;
 
-public class BankCreditCalcParam extends TestBase {
+public class BankCreditCalcParamIncome extends TestBase {
 
 
   CalcPage calcPage = new CalcPage();
   TestData testData = new TestData();
 
-  @CsvFileSource(resources = "/paramForCalc.csv")
+  @CsvFileSource(resources = "/paramForCalcIncome.csv")
   @ParameterizedTest
   @Tag("bankTest")
   void openFormTest(String typeCr, String typeCalc, String crSum, String crPayment) {
@@ -32,12 +30,7 @@ public class BankCreditCalcParam extends TestBase {
       calcPage.setLoanType(typeCalc);
     });
     step("Устанавливаем ежемесячный доход или сумму", () -> {
-      switch (testData.userLoanType) {
-        case ("от суммы кредита    "):
-          calcPage.setSum(testData.income);
-        case ("от размера дохода"):
           calcPage.setIncome(testData.income);
-      }
     });
     step("Устанавливаем срок кредита", () -> {
       calcPage.setTerm(testData.term);
