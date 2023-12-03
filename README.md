@@ -73,7 +73,7 @@ clean bank_test
 </p>
 
 ## Allure-отчет
-После выполнения тестов генирируется Allure-отчет. Найти его можено От находится [тут](https://jenkins.autotests.cloud/job/AN_qa_22_cv_task/12/allure/)
+После выполнения тестов генирируется Allure-отчет. Найти его можно  [тут](https://jenkins.autotests.cloud/job/AN_qa_22_cv_task/12/allure/)
 <img title="Test Results in Alure" src="media/screenshots/Allure-Report.png">
 </p>
 
@@ -81,7 +81,7 @@ clean bank_test
 
 Выполнена интеграция сборки <code>Jenkins</code> с <code>Allure TestOps</code>.
 Результат выполнения автотестов отображается в <code>Allure TestOps</code>
-На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов. Ссылочка [тут](https://allure.autotests.cloud/launch/32948).
+На Dashboard в <code>Allure TestOps</code> отображена статистика пройденных тестов. Ссылка [тут](https://allure.autotests.cloud/launch/32948).
 
 <p align="center">
 <img title="Allure TestOps DashBoard" src="media/screenshots/Allure-TestOps.png">
