@@ -88,8 +88,5 @@ public class BankCreditCalcTest extends TestBase {
           calcPage.verifyLoanPayment(testData.resultArray[6]);
       }
     });
-    step("Закрываем страницу", () -> {
-      calcPage.closePage();
-    });
   }
 }
