@@ -19,7 +19,7 @@ public class BankCreditCalcParamCreditTest extends TestBase {
 
     step("Открывыем страницу калькулятора", () -> {
       calcPage.openPage();
-      calcPage.waitPage();
+      wait(3000);;
     });
     step("Проверяем что заголовок Расчитай... ", () -> {
       calcPage.verifyTitle(testData.titleText);
