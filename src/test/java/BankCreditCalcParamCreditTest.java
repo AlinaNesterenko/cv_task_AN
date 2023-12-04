@@ -14,7 +14,7 @@ public class BankCreditCalcParamCreditTest extends TestBase {
 
   @CsvFileSource(resources = "/paramForCalcCredit.csv")
   @ParameterizedTest
-  @Tag("bankTest")
+ // @Tag("bankTest")
   void openFormTest(String typeCr, String typeCalc, String crSum, String crPayment) {
 
     step("Открывыем страницу калькулятора", () -> {

@@ -13,7 +13,7 @@ public class BankCreditCalcNameTest extends TestBase {
   TestData testData = new TestData();
 
   @Test
-  @Tag("bankTest")
+ // @Tag("bankTest")
   @DisplayName("Credit calculator")
   void openFormTest() {
 
