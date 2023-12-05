@@ -37,7 +37,6 @@ public class BankCreditCalcParamCreditTest extends TestBase {
     });
     step("Нажимаем кнопку Расчитать", () -> {
       calcPage.submitAction();
-      calcPage.waitPage();
     });
     step("Проверяем сумму кредита", () -> {
       calcPage.verifyLoanSum(crSum);

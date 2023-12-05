@@ -14,12 +14,11 @@ public class BankCreditCalcNameTest extends TestBase {
 
   @Test
   @Tag("bankTest")
-  @DisplayName("Credit calculator")
+  @DisplayName("Credit calculator name")
   void openFormTest() {
 
     step("Открывыем страницу калькулятора", () -> {
       calcPage.openPage();
-      calcPage.waitPage();
     });
     step("Проверяем что заголовок Расчитай... ", () -> {
       calcPage.verifyTitle(testData.titleText);
