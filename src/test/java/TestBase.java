@@ -17,7 +17,7 @@ public class TestBase {
   @BeforeAll
   static void setUp() {
 
-    Configuration.pageLoadStrategy = "eager";
+    // Configuration.pageLoadStrategy = "eager";
     Configuration.baseUrl = System.getProperty("baseUrl", "https://www.priorbank.by/");
     Configuration.browser = System.getProperty("browser", "chrome");
     Configuration.browserVersion = System.getProperty("version", "100");
