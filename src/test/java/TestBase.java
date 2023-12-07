@@ -17,11 +17,12 @@ public class TestBase {
   @BeforeAll
   static void setUp() {
 
-    // Configuration.pageLoadStrategy = "eager";
+    Configuration.pageLoadTimeout = 100000;
+    Configuration.pageLoadStrategy = "eager";
     Configuration.baseUrl = System.getProperty("baseUrl", "https://www.priorbank.by/");
     Configuration.browser = System.getProperty("browser", "chrome");
     Configuration.browserVersion = System.getProperty("version", "100");
-    Configuration.browserSize = System.getProperty("size", "1920X1280");
+    Configuration.browserSize = System.getProperty("size", "1920x1280");
     Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
 
