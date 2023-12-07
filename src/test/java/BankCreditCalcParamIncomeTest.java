@@ -13,7 +13,7 @@ public class BankCreditCalcParamIncomeTest extends TestBase {
   TestData testData = new TestData();
 
   @CsvFileSource(resources = "/paramForCalcIncome.csv")
-  @ParameterizedTest(name = "Для типа кредита: {typeCr} и типа калькуляции: {typeCalc} сумма кредита и платеж расчитывается согласно данным")
+  @ParameterizedTest
   @Tag("bankTest")
   void openFormTest(String typeCr, String typeCalc, String crSum, String crPayment) {
 
